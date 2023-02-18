@@ -3,7 +3,7 @@
 *{
     box-sizing: border-box;
 }
-body {
+body, p {
     padding: 0;
     margin: 0;
 }
@@ -12,18 +12,51 @@ body {
 /* Nav */
 
 nav {
-    background-color: aqua;
+    background: linear-gradient(140deg, #ffbf0099 30%, #fffbb699 45%, #fde968bb 63%, #bf9b3055 ), linear-gradient(180deg, transparent 95%, #fde968bb);
     width: 100%;
     height: 12vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 6px 20px 0px #fde968bb;
+    position: sticky;
+    top: 0;
 }
-.nav-img-container {
-    margin-left: 5vw;
-    background-image: url("./images/logue.png");
+
+.nav-container {
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fa-bars {
+    color: #a67c00;
+    margin-right: 2vw;
+    padding: 15px;
+    border-radius: 50%;
+    transition-property: background;
+    transition-duration: 0.5s;
+}
+.fa-bars:hover {
+    background-color: #ffbb11;
+}
+.nav-title {
+    font-size: 32px;
 }
 .nav-link {
     margin-right: 5vw;
+    font-family: "Merienda", Tahoma;
+    text-decoration: none;
+    color: #a67c00;
+    padding: 15px;
+    border-radius: 30px;
+}
+.nav-link-text {
+    font-size: 20px;
+    transition-property: background;
+    transition-duration: 0.5s;
+}
+.nav-link-text:hover {
+    background-color: #ffbb11;
 }
