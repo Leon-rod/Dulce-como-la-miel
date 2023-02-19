@@ -70,8 +70,44 @@ nav {
     height: 88vh;
     display: flex;
     flex-direction: column;
-
     z-index: 800;
     background-color: #333;
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
+
+.menu-list {
+    background-color: #33f;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+.menu-element {
+    margin: 30px 0 0 40px ;
+    /* overflow: hidden; */
+}
+.fa-caret-right {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    margin-left: 150px;
+    transition: transform 0.3s;
+}
+.arrow {
+    transform: rotate(90deg);
+}
+.submenu {
+    list-style: none;
+    border-left: 2px solid #334556;
+    padding: 0;
+    /* height: 0; */
+}
+.submenu-element {
+    padding: 10px 0 0 10%;
+    width: 65%;
+    min-width: 130px;
+    background-color: #999;
+}
+
