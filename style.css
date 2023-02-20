@@ -22,6 +22,7 @@ nav {
     box-shadow: 0 6px 20px 0px #fde968bb;
     position: sticky;
     top: 0;
+    z-index: 900;
 }
 
 .nav-container {
@@ -60,3 +61,73 @@ nav {
 .nav-link-text:hover {
     background-color: #ffbb11;
 }
+
+
+/* Menú */
+
+.menu {
+    width: 0px;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 800;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg,  #ffd752 30%, #fde968bb 70%, #ff9a00);
+    position: sticky;
+    top: 12vh;
+    transition: width 0.4s;
+    
+}
+.deploy {
+    width: 30vw;
+}
+ul {
+    list-style: none;
+}
+.menu-list {
+    padding: 0;
+    width: 70%;
+    padding-left: 50px;
+
+}
+.menu-element {
+    padding: 2vw 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 0.4s;
+    font-family: "Teko";
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #886e1f;
+    height: 0;
+}
+.menu-element label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+#arrow-icon {
+    transition-property: transform;
+    transition-duration: 0.4s;
+}
+.arrow #arrow-icon {
+    transform: rotate(90deg);
+}
+.submenu {
+    margin-top: 13px;
+    border-left: 2px solid #ff9a00;
+}
+.submenu-element {
+    margin: 15px 0 0;
+    padding-left: 15px;
+}
+.submenu-element:hover {
+    border-radius: 5px 0 0 5px;
+    background: linear-gradient(230deg, transparent 15%, #ffd752 40%, #ff9a00 100%);
+}
+
