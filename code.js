@@ -1,12 +1,24 @@
-let menuElements = document.querySelectorAll(".menu-element--click")
-let icon = document.querySelectorAll(".fa-caret-right")
-
+let menuElements = document.querySelectorAll(".menu-element");
 menuElements.forEach(menuElement => {
     menuElement.addEventListener("click", ()=> {
-        icon.forEach(iconElement => {
-            iconElement.classList.toggle("arrow")
-        })});
+        menuElement.classList.toggle("arrow");
         let height = 0;
-        let menu = menuElement.nextElementSibling;
-        console.log(menu.scrollHeight)
-    });
+        let nextMenuElement = menuElement.nextElementSibling;
+        console.log(menuElement.scrollHeight)
+        if (menuElement.clientHeight<"200") {
+            height = menuElement.scrollHeight;
+        };
+        menuElement.style.height = `${height}px`;
+    })
+});
+
+
+
+
+
+
+let despliegue = document.querySelector(".fa-bars");
+let despMenu = document.querySelector(".menu")
+despliegue.addEventListener("click", ()=> {
+    despMenu.classList.toggle("deploy")
+})
