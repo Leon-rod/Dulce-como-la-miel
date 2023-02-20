@@ -3,8 +3,7 @@ menuElements.forEach(menuElement => {
     menuElement.addEventListener("click", ()=> {
         menuElement.classList.toggle("arrow");
         let height = 0;
-        let nextMenuElement = menuElement.nextElementSibling;
-        console.log(menuElement.scrollHeight)
+        // let nextMenuElement = menuElement.nextElementSibling;
         if (menuElement.clientHeight<"200") {
             height = menuElement.scrollHeight;
         };
