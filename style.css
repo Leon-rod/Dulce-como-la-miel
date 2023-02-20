@@ -66,7 +66,7 @@ nav {
 /* Menú */
 
 .menu {
-    width: 0px;
+    width: 0vw;
     height: 88vh;
     display: flex;
     flex-direction: column;
@@ -81,6 +81,7 @@ nav {
 }
 .deploy {
     width: 30vw;
+    height: 88vh;
 }
 ul {
     list-style: none;
